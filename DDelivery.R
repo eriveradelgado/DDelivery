@@ -1,5 +1,5 @@
 # Compare script to COPASUtils
-# test
+# test2
 
 # ---------------------------------------------------------------------
 #                           File import
