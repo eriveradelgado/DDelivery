@@ -13,9 +13,11 @@
     # and Rstudio Git pane. Things that can be a headeache so far
     # is being in the wrong working directory, or in the incorrect branch.
     # a good workflow I found from the following website:
+    # http://nvie.com/posts/a-successful-git-branching-model/
     # I'm looking forward to start collaborating with my students by 
     # this mean to analyze our data and make updates to our workflow in a 
     # distributed fashion. Hopefully this will make our research more robust.
+    # New diff
 
 
 
