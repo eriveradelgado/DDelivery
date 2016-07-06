@@ -7,7 +7,7 @@
 # Chapter 2 : This is a diff from Windows
 
 
-# Chapter 3
+# Chapter 3 : This is a dif from EC2
 
 
 # Chapter 4
