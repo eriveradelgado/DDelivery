@@ -17,7 +17,7 @@
 # 2. Fix 96 well plate import function
 #    2.1 Use select instead of lapply
 # 3. Fix get_time()
-#    3.1 get time is not grear
+#    3.1 get time is not great
 #    3.2 I don't know if it's a horrible function or our documentation
 #        practices are cumbersome
 # 4. 
