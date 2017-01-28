@@ -12,6 +12,16 @@
 # Siepmann 2008 to fit data from drug delivery  and simulate exp-
 # eriments.
 
+# Things to do (from EC2): 
+# 1. Check differences between this version and the one in the lab
+# 2. Fix 96 well plate import function
+#    2.1 Use select instead of lapply
+# 3. Fix get_time()
+#    3.1 get time is a horrible function
+#    3.2 I don't know if it's a horrible function or our documentation is jiust 
+#    3.3 
+
+
 # ---------------------------------------------------------------------
 #                           File import
 # ---------------------------------------------------------------------
