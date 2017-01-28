@@ -1,4 +1,16 @@
+# ---------------------------------------------------------------------
+#                          DDelivery
+# ---------------------------------------------------------------------
 
+# These set of functions can be used to analyze release data from drug
+# release experiments to better design drug delivery strategies using
+# polymers as carriers. It is adapted to best handle data from 96 well plate
+# format where the columns are integers from 1 to 12 and the rows are 
+# letters from A to H. By using R and the tidyverse I hope to make the 
+# analysis more transparent, accesible and reproducible for other scientists.
+# The goal is to eventually adapt the equations summarized in Siepmann and 
+# Siepmann 2008 to fit data from drug delivery  and simulate exp-
+# eriments.
 
 # ---------------------------------------------------------------------
 #                           File import
