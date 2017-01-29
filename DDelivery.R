@@ -20,7 +20,8 @@
 #    3.1 get time is not great
 #    3.2 I don't know if it's a horrible function or our documentation
 #        practices are cumbersome
-# 4. 
+# 4. Include a readme.MD
+# 5. Reorganize recent delivery projects with a clear analysis workflow
 
 # ---------------------------------------------------------------------
 #                           File import
