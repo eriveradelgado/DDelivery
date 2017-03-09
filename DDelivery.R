@@ -23,8 +23,8 @@
 # 4. Include a readme.MD
 # 5. Reorganize recent delivery projects with a clear analysis workflow
 # 6. Testing git checkout <branch name>; working out of the the branches without
-# /origin/branch-name in Rstudio seems to solve this problem. It is intriguing 
-# what these other branches are pointing too.
+#   /origin/branch-name in Rstudio seems to solve this problem. It is intriguing 
+#   what these other branches are pointing too. 
 
 # ---------------------------------------------------------------------
 #                           File import
