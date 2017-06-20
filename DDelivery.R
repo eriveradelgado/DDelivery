@@ -22,6 +22,7 @@
 #        practices are cumbersome
 # 4. Include a readme.MD
 # 5. Reorganize recent delivery projects with a clear analysis workflow
+# 6. Testing SSH
 
 # ---------------------------------------------------------------------
 #                           File import
