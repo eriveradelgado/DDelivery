@@ -233,19 +233,3 @@ drug_release <- function(df, intercept, slope, vial.volume, sample.volume){
   
 
 
-        
-# ---------------------------------------------------------------------
-#                         Statistics
-# ---------------------------------------------------------------------
-delivery_stats <- function(grouped_df, column){
-  
-  stats  <- summarise(grouped_df, N = length(column),
-                      Average = mean(column),
-                      StDev = sd(column))
-  return(stats)                   
-}
-
-# ---------------------------------------------------------------------
-#                        Plotting
-# ---------------------------------------------------------------------
-
