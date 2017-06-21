@@ -9,8 +9,7 @@
 # letters from A to H. By using R and the tidyverse I hope to make the 
 # analysis more transparent, accesible and reproducible for other scientists.
 # The goal is to eventually adapt the equations summarized in Siepmann and 
-# Siepmann 2008 to fit data from drug delivery  and simulate exp-
-# eriments.
+# Siepmann 2008 to fit data from drug delivery.
 
 # Things to do (from EC2): 
 # 1. Check differences between this version and the one in the lab
@@ -41,7 +40,8 @@ import_96wellplates <- function(filepath, pattern, remove = 0, skip = 16,  ...){
    if(remove != 0){
     list.import <- lapply(filelist[-remove], read_excel, skip = skip,...)
     filelist <- filelist[-remove]
-  }else{
+  }
+  else{
     list.import <-  lapply(filelist, read_excel , skip= skip,...)
   }
   
@@ -233,21 +233,3 @@ drug_release <- function(df, intercept, slope, vial.volume, sample.volume){
     mutate(timepoint.release = cumulative.release - lag(cumulative.release,default = F)) 
   return(release_df)}
   
-
-
-        
-# ---------------------------------------------------------------------
-#                         Statistics
-# ---------------------------------------------------------------------
-delivery_stats <- function(grouped_df, column){
-  
-  stats  <- summarise(grouped_df, N = length(column),
-                      Average = mean(column),
-                      StDev = sd(column))
-  return(stats)                   
-}
-
-# ---------------------------------------------------------------------
-#                        Plotting
-# ---------------------------------------------------------------------
-
