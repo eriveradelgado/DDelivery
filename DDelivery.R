@@ -23,7 +23,7 @@
 # 4. Include a readme.MD
 # 5. Reorganize recent delivery projects with a clear analysis workflow
 # 6. Testing SSH
-# 7. From MBP SG Terminal
+# 7. From MBP after brew install of ssh-keypass cp to usr/X11R6/bin
 
 # ---------------------------------------------------------------------
 #                           File import
