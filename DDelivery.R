@@ -22,6 +22,8 @@
 #        practices are cumbersome
 # 4. Include a readme.MD
 # 5. Reorganize recent delivery projects with a clear analysis workflow
+# 6. Testing SSH
+# 7. From MBP after brew install of ssh-keypass cp to usr/X11R6/bin
 
 # ---------------------------------------------------------------------
 #                           File import
@@ -233,20 +235,4 @@ drug_release <- function(df, intercept, slope, vial.volume, sample.volume){
   return(release_df)}
   
 
-
-        
-# ---------------------------------------------------------------------
-#                         Statistics
-# ---------------------------------------------------------------------
-delivery_stats <- function(grouped_df, column){
-  
-  stats  <- summarise(grouped_df, N = length(column),
-                      Average = mean(column),
-                      StDev = sd(column))
-  return(stats)                   
-}
-
-# ---------------------------------------------------------------------
-#                        Plotting
-# ---------------------------------------------------------------------
 
