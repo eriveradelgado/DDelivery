@@ -60,6 +60,8 @@ return(tidy_df)
 #                         Annotation
 # ---------------------------------------------------------------------
 wells <- function(initialrow, finalrow, initialcolumn, finalcolumn){
+  # This function needs some constraints for example 96 well plates don't have a
+  # 13 column and other details like that.
   wells <- paste0(rep(LETTERS[initialrow:finalrow], each = finalcolumn-initialcolumn+1),
                   rep(initialcolumn:finalcolumn, times = finalrow-initialrow+1))
   return(wells)
