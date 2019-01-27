@@ -251,4 +251,4 @@ drug_release <- function(df, intercept, slope, vial.volume, sample.volume){
     mutate(cumulative.release = drug.in.vial + total.removed - drug.removed) %>%
     mutate(timepoint.release = cumulative.release - lag(cumulative.release,default = F)) 
   return(release_df)}
-  
+
