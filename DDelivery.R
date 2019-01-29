@@ -89,13 +89,10 @@ return(tidy_df)
 #                         Annotation
 # ---------------------------------------------------------------------
 wells <- function(initialrow, finalrow, initialcolumn, finalcolumn){
-<<<<<<< HEAD
-  # This function needs some constraints for example 96 well plates don't have a
-  # 13 column and other details like that.
-=======
+
   # This function needs some constraints e.g. 13 column inputs or initial column
   # greater than finalcolumn. Besides most people don't write rows in number format
->>>>>>> ec42399be1dc74d64b91ba15ddcaf103d447d7b7
+
   wells <- paste0(rep(LETTERS[initialrow:finalrow], each = finalcolumn-initialcolumn+1),
                   rep(initialcolumn:finalcolumn, times = finalrow-initialrow+1))
   return(wells)
