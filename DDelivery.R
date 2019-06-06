@@ -263,3 +263,11 @@ drug_release <- function(df, intercept, slope, vial.volume, sample.volume){
     mutate(timepoint.release = cumulative.release - lag(cumulative.release,default = F)) 
   return(release_df)}
 
+tidy_chemcal <- function(mod){
+  min_detection<-lod(mod) 
+  min_quantitation<- loq(mod)
+  
+  data.frame(term          = c("min_detection", "min_quantitation"),
+             absorbance    = c(min_detection[["absorbance"]], min_quantitation[["absorbance"]]),
+             concentration = c(min_detection[["concentration"]], min_quantitation[["concentration"]]))
+}
